@@ -10,7 +10,19 @@ namespace Ex_3_5
             int A = Convert.ToInt32(Console.ReadLine());
             int B = Convert.ToInt32(Console.ReadLine());
             int result = 0;
-            for(int count = A; count<B; count++)
+            int max;
+            int min;
+            if (A > B)
+            {
+                max = A;
+                min = B;
+            }
+            else
+            {
+                max = B;
+                min = A;
+            }
+            for(int count = min; count < max; count++)
             {
                 if (count % 7 == 0)
                 {
